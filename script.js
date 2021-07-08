@@ -100,7 +100,17 @@ if(!special && !number && !lower && !upper){
   console.log("Generate Password");
   finalizePassword();
 }
-
+function finalizePassword(){
+  for(i=0;i < length-4; i++){
+    guaranteedCharacters = guaranteedCharacters.concat(selectRandom(possibleCharacters));
+  };
+  console.log(guaranteedCharacters);
+  result = guaranteedCharacters.join("");
+  console.log(result);
+}
+// Send final result to the writePassword() function to be displayed in the text box
+return result;
+};
 // Display all arrays for testing
 console.log("Special Characters: " + specialCharacters);
 console.log("Numeric Characters: " + numericCharacters);
