@@ -31,6 +31,18 @@ function generatePassword(){
     let random = x[Math.floor(Math.random() * x.length)];
     return random;
   }
+
+// Check that length is between 8-128
+if (parseInt(pwlength) && pwlength < 129 && pwlength > 7){
+  var length = parseInt(pwlength);
+  console.log(pwlength);
+}else if(parseInt(pwlength) < 8 || parseInt(pwlength) > 128){
+  console.log("Please enter a number higher than 8 and lower than 128");
+  alert("Please enter a number higher than 8 and lower than 128");
+}else{
+  console.log("You did not enter a number! Try Again!")
+  alert("You did not enter a number! Try Again!")
+  return;
 }
 
 // Display all arrays for testing
