@@ -17,8 +17,21 @@ var upperCasedCharacters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K
 
 
 
-
-
+// The function that generates the password
+function generatePassword(){
+  var possibleCharacters = [];
+  var guaranteedCharacters = [];
+  var result = [];
+  //Ask for length of password
+  var pwlength = prompt("How long would you like your password to be?");
+ 
+ 
+  // Function to select random character from array
+  function selectRandom(x){
+    let random = x[Math.floor(Math.random() * x.length)];
+    return random;
+  }
+}
 
 // Display all arrays for testing
 console.log("Special Characters: " + specialCharacters);
