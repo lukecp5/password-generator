@@ -79,6 +79,18 @@ if (upper){
 }else{
   console.log("No uppercase Characters will be included");
 }
+
+// Ask for lowercase character inclusion, and add a random one to the guaranteed. Merge possible with lowercase characters
+var lower = confirm("Would you like to include lowercase characters?");
+if (lower){
+  lowerRandom = selectRandom(lowerCasedCharacters); 
+  console.log(lowerRandom);
+  guaranteedCharacters.push(lowerRandom);
+  possibleCharacters = possibleCharacters.concat(lowerCasedCharacters);
+}else{
+  console.log("No lowercase Characters will be included");
+}
+
 // Display all arrays for testing
 console.log("Special Characters: " + specialCharacters);
 console.log("Numeric Characters: " + numericCharacters);
