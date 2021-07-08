@@ -40,11 +40,13 @@ function generatePassword() {
   } else if (parseInt(pwlength) < 8 || parseInt(pwlength) > 128) {
     console.log("Please enter a number higher than 8 and lower than 128");
     alert("Please enter a number higher than 8 and lower than 128");
+    return;
   } else {
     console.log("You did not enter a number! Try Again!")
     alert("You did not enter a number! Try Again!")
     return;
   }
+
 
 
   // Ask for Special character inclusion, and add a random one to the guaranteed. Merge possible with special characters
