@@ -58,6 +58,17 @@ if (special){
   console.log("No Special Characters will be included");
 }
 
+// Ask for number character inclusion, and add a random one to the guaranteed. Merge possible with number characters
+var number = confirm("Would you like to include Numbers?");
+if (number){
+  numberRandom = selectRandom(numericCharacters); 
+  console.log(numberRandom);
+  guaranteedCharacters.push(numberRandom);
+  possibleCharacters = possibleCharacters.concat(numericCharacters);
+}else{
+  console.log("No number Characters will be included");
+}
+
 // Display all arrays for testing
 console.log("Special Characters: " + specialCharacters);
 console.log("Numeric Characters: " + numericCharacters);
