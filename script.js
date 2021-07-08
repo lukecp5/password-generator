@@ -121,6 +121,7 @@ function generatePassword() {
     //log the results to the console
     console.log("Randomly Generated Array: " + guaranteedRandom);
     result = guaranteedRandom.join("");
+    result = result.toString();
     console.log("Final Password: " + result);
   }
   // Send final result to the writePassword() function to be displayed in the text box
