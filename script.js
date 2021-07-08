@@ -69,6 +69,16 @@ if (number){
   console.log("No number Characters will be included");
 }
 
+// Ask for upper case character inclusion, and add a random one to the guaranteed. Merge possible with upper case characters
+var upper = confirm("Would you like to include uppercase characters?");
+if (upper){
+  upperRandom = selectRandom(upperCasedCharacters); 
+  console.log(upperRandom);
+  guaranteedCharacters.push(upperRandom);
+  possibleCharacters = possibleCharacters.concat(upperCasedCharacters);
+}else{
+  console.log("No uppercase Characters will be included");
+}
 // Display all arrays for testing
 console.log("Special Characters: " + specialCharacters);
 console.log("Numeric Characters: " + numericCharacters);
