@@ -1,0 +1,4 @@
+1. Prompt returns a string. If you want to check that a user-entered value is a real number, you first need to convert a string to an integer. How can you do that in JS? Then you can check if that value is a number. How can you do that in JS?
+2. You will need to get a random element from an array multiple times throughout the app. Consider abstracting this functionality into its own function. See the mini-project to remember the algorithm for getting a random value from an array.
+3. What data structures do you need? There's special characters, numeric characters, lowercased characters, and uppercased characters. There's your final result, possible characters, and guaranteed characters.
+4. If you store your result in an array while building up the result, how can you convert it to a string at the end of the function? What array method will convert array values into a string?
