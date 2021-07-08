@@ -91,6 +91,16 @@ if (lower){
   console.log("No lowercase Characters will be included");
 }
 
+// Ensure that atleast one of the types of characters was selected for inclusion
+if(!special && !number && !lower && !upper){
+  console.log("You have to select a special character, number, uppercase, or lowercase character, otherwise you wont have a password");
+  alert("You have to select a special character, number, uppercase, or lowercase character, otherwise you wont have a password");
+  return;
+}else{
+  console.log("Generate Password");
+  finalizePassword();
+}
+
 // Display all arrays for testing
 console.log("Special Characters: " + specialCharacters);
 console.log("Numeric Characters: " + numericCharacters);
