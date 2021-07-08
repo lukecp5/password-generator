@@ -45,6 +45,19 @@ if (parseInt(pwlength) && pwlength < 129 && pwlength > 7){
   return;
 }
 
+
+// Ask for Special character inclusion, and add a random one to the guaranteed. Merge possible with special characters
+var special = confirm("Would you like to include special characters?")
+if (special){
+  specialRandom = selectRandom(specialCharacters); 
+  console.log(specialRandom);
+  guaranteedCharacters.push(specialRandom);
+  possibleCharacters = possibleCharacters.concat(specialCharacters);
+  console.log(possibleCharacters);
+}else{
+  console.log("No Special Characters will be included");
+}
+
 // Display all arrays for testing
 console.log("Special Characters: " + specialCharacters);
 console.log("Numeric Characters: " + numericCharacters);
